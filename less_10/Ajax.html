@@ -1,6 +1,7 @@
 <html>
 <head>
 <title>Ajax</title>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
 
@@ -12,8 +13,7 @@
 		<label>Surname:</label><br> <input type="text" id="userSurnameGet"><br>
 		<label>Age:</label><br> <input type="text" id="userAgeGet"><br>
 		<label>Residence:</label><br> <input type="text" id="userResidenceGet">
-		<br> <input style = 'margin-top:15px' type="button" value="Send by Get" 
-				onclick="sendDataByGetMethod()">
+		<br> <input id= "ajaxGet" style = 'margin-top:15px' type="button" value="Send by Get">
 	</form>
 
 	<br>
@@ -25,12 +25,11 @@
 		<label>Surname:</label><br> <input type="text" id="userSurnamePost"><br>
 		<label>Age:</label><br> <input type="text" id="userAgePost"><br>
 		<label>Residence:</label><br> <input type="text" id="userResidencePost">
-		<br> <input style = 'margin-top:15px' type="button" value="Send by Post" 
-				onclick="sendDataByPostMethod()">
+		<br> <input id= "ajaxPost" style = 'margin-top:15px' type="button" value="Send by Post">
 	</form>
 
 	<br>
 
-	<script src = 'ajax.js'></script>
+	<script src = 'jqueryAjax.js'></script>
 </body>
 </html>
